@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Error.master.cs" Inherits="withScriptsTemplate.Error" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ERROR PAGE</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+            <asp:Image runat="server" ImageUrl="~/chitti.jpg" Height="300px" Width="300px">
+                
+            </asp:Image>
+                </center>
+            <asp:ContentPlaceHolder ID="ErrorContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MvcOld.Models.Movie>
+
+@{
+    ViewBag.Title = "GetAllmovies";
+}
+
+<h2>GetAllmovies</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GetAllmovies)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddNewmovies)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Updatemovies)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Deletemovies)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GetAllmovies)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddNewmovies)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Updatemovies)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deletemovies)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

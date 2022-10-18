@@ -1,0 +1,24 @@
+﻿
+@{
+    string username = "admin";
+    string password = "nimda";
+    string Status = "";
+}
+
+
+
+
+
+<div>
+    <input type='text' value='@username'/>
+    <br/>
+    <input type='password' value='@password'/>
+    <br/>
+    <button>
+        @Html.ActionLink("Login","OnLogin", new {username=username,password=password});
+        </button>
+        <br/>
+         <b>@ViewBag.Status</b>
+    
+
+    </div>

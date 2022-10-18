@@ -1,0 +1,21 @@
+﻿@model MvcOld.Models.Product
+
+@{
+    ViewBag.Title = "SomeView";
+    
+}
+
+<h2>SomeView</h2>
+
+//Add the view as partial view here
+
+@{ 
+    if(Model.ItemCode != 0)
+    {
+        Html.RenderPartial("Edit", Model);
+    }
+    else
+    {
+        Html.RenderPartial("AddProduct", Model);
+    }
+}

@@ -1,0 +1,48 @@
+﻿@{
+    if(ViewBag == null)
+    {
+    
+    ViewBag.Name = "";
+    ViewBag.Place = "";
+    ViewBag.Animal = "";
+    ViewBag.Thing = "";
+}
+}
+
+<button>
+    @Html.ActionLink("Name","GetName")
+
+</button>
+<button>
+    @Html.ActionLink("Place","GetPlace")
+
+</button>
+<button>
+    @Html.ActionLink("Animal","GetAnimal")
+
+</button>
+<button>
+    @Html.ActionLink("Thing","GetThing"
+    )
+
+</button>
+
+<hr/>
+<h2>THE FOLLOWING DETAILS</h2>
+The name that starts with 'a' is <b>@ViewBag.Name</b><br/>
+The Place that starts with 'a' is <b>@ViewBag.Place</b><br/>
+The Animal that starts with 'a' is <b>@ViewBag.Animal</b><br/>
+The Thing that starts with 'a' is <b>@ViewBag.Thing</b><br/>
+<hr/>
+<<h2>THE FOLLOWING DETAILS</h2>
+The name that starts with 'a' is <b>@ViewBag.Name</b>
+<br />
+The Place that starts with 'a' is <b>@ViewBag.Place</b>
+<br />
+The Animal that starts with 'a' is <b>@ViewBag.Animal</b>
+<br />
+The Thing that starts with 'a' is <b>@ViewBag.Thing</b>
+<br />
+<hr />
+
+
